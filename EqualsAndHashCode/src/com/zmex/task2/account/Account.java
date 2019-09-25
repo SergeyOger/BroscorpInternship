@@ -1,4 +1,4 @@
-package com.zmex.task2.accaunt;
+package com.zmex.task2.account;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

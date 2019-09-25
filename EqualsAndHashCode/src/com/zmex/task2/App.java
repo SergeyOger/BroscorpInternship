@@ -3,7 +3,7 @@ package com.zmex.task2;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.zmex.task2.accaunt.Account;
+import com.zmex.task2.account.Account;
 import com.zmex.task2.user.User;
 
 public class App {
