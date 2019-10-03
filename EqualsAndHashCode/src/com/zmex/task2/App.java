@@ -9,6 +9,12 @@ import com.zmex.task2.user.User;
 public class App {
 
     public static void main(String[] args) {
+	User user = new User("Jon", "Deg 68 101 103", "mail@gmail.com","password","Ukraine");
+	User user2 = new User("Dun", )
+	System.out.println(Integer.valueOf(new Character('J')));
+    }
+
+    private static void showValuesDistribution() {
 	long positiveValues;
 	long negativeValues;
 	Set<User> users = new HashSet<User>();
