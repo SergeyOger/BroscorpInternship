@@ -1,8 +1,8 @@
-package com.zmex.list;
+package com.zmex.customList.list;
 
 import java.util.Iterator;
 
-import com.zmex.list.example.CustomList;
+import com.zmex.customList.list.example.CustomList;
 
 public class App {
 

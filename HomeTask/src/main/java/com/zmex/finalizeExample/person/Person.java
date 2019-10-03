@@ -1,6 +1,6 @@
-package com.zmex.homeTask.person;
+package com.zmex.finalizeExample.person;
 
-import com.zmex.homeTask.App;
+import com.zmex.finalizeExample.App;
 
 public class Person {
     private static int finalizeCounter;

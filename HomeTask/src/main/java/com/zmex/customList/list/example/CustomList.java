@@ -1,4 +1,4 @@
-package com.zmex.list.example;
+package com.zmex.customList.list.example;
 
 import java.io.Serializable;
 import java.util.Arrays;

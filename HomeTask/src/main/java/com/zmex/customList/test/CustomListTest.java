@@ -1,4 +1,4 @@
-package test;
+package com.zmex.customList.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.zmex.list.example.CustomList;
+import com.zmex.customList.list.example.CustomList;
 
 class CustomListTest {
     CustomList<Integer> list;
