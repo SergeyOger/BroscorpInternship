@@ -1,0 +1,8 @@
+.dbeaver
+.idea
+.settings
+.sts4-cache
+target
+.classpath
+.project
+HomeTask.iml
