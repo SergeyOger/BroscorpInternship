@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 import java.util.function.Function;
-import java.util.stream.Stream;
 
 public class CustomList<T extends Number> implements Serializable, Cloneable {
 
@@ -29,6 +28,10 @@ public class CustomList<T extends Number> implements Serializable, Cloneable {
             throw new IllegalArgumentException("Illegal capacity " + capacity);
         }
 
+    }
+
+    private CustomList(Object [] numbers) {
+        DATA_ARRAY = numbers;
     }
 
     private void checkCapacity() {
@@ -80,12 +83,13 @@ public class CustomList<T extends Number> implements Serializable, Cloneable {
 
     }
 
-    public Stream<Object> map(Function<? super T, ? extends T> function) {
-		return Arrays.stream(DATA_ARRAY).filter(Objects::nonNull).peek(x -> function.apply((T) x));
+    public <R extends Number> CustomList<R> map(Function<T, R> function) {
+        DATA_ARRAY = Arrays.stream(DATA_ARRAY).filter(Objects::nonNull).map(x -> function.apply((T) x)).toArray();
+        return (CustomList<R>) this;
     }
 
     public Iterator<T> iterator() {
-        return new CustomIterator<T>();
+        return new CustomIterator<>();
     }
 
     public int size() {

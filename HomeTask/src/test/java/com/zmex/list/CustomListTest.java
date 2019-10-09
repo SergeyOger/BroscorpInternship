@@ -1,6 +1,7 @@
 package com.zmex.list;
 
 import com.zmex.customList.list.CustomList;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,21 +9,26 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CustomListTest {
-    CustomList<Integer> list;
+    static CustomList<Integer> list;
 
     @BeforeEach
     void initList() {
         list = new CustomList<>();
     }
 
+    @AfterAll
+    static void cleanList() {
+        list = null;
+    }
+
     @Test
-    @DisplayName("Testing add method")
+    @DisplayName("Test add method")
     void testAddMethod() {
         assertTrue(list.add(1));
     }
 
     @Test
-    @DisplayName("Testing size method")
+    @DisplayName("Test size method")
     void testSizeMethod() {
         for (int i = 0; i < 20; i++) {
             list.add(i);
@@ -31,17 +37,16 @@ class CustomListTest {
     }
 
     @Test
-    @DisplayName("Testing get method")
-    void testGetMehod() {
+    @DisplayName("Test get method")
+    void testGetMethod() {
         for (int i = 0; i < 10; i++) {
             list.add(i);
         }
-
         assertTrue(list.get(6) == 6);
     }
 
     @Test
-    @DisplayName("Testing remove method")
+    @DisplayName("Test remove method")
     void testRemoveMethod() {
         for (int i = 0; i < 30; i++) {
             list.add(i);
