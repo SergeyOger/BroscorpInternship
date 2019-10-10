@@ -11,8 +11,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 public class Account {
-	private @NonNull String accountType;
-	private @NonNull String accountName;
-	private @NonNull String accountOwner;
-
+  private @NonNull String accountType;
+  private @NonNull String accountName;
+  private @NonNull String accountOwner;
 }
