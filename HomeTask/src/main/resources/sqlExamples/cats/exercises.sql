@@ -22,3 +22,9 @@ select avg(cats.age) as catAge, avg(k.age) as kittenAge
 from cats
          right outer join kittens k on cats.name = k.catname;
 
+select catname, k.kittenname
+from cats
+         right join kittens k on cats.name = k.catname
+group by catname, kittenname
+order by catname;
+

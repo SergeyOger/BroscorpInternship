@@ -1,0 +1,228 @@
+create table customers
+(
+    id              SERIAL PRIMARY KEY,
+    first_name      VARCHAR(50),
+    last_name       VARCHAR(50),
+    country         VARCHAR(50),
+    card_number     varchar(50),
+    salary_per_year FLOAT,
+    job_title       VARCHAR(50)
+);
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (1, 'Cristy', 'Rickasse', 'Indonesia', '3549782230773934', '135338.68', 'Assistant Media Planner');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (2, 'Cherilynn', 'Enevoldsen', 'China', '3547237613235540', '75739.81', 'Web Designer III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (3, 'Gerhard', 'Berthod', 'Croatia', '5610541756074120', '80595.15', 'Teacher');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (4, 'Garrek', 'Lighterness', 'Indonesia', '372301432731075', '56002.03', 'Human Resources Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (5, 'Blayne', 'Kingsworth', 'Vietnam', '5108758821764555', '42609.15', 'Data Coordiator');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (6, 'Marja', 'Pitford', 'Vietnam', '633478845589666402', '49237.75', 'Physical Therapy Assistant');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (7, 'Andeee', 'Joice', 'China', '3588091683670163', '2633.43', 'Assistant Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (8, 'Haze', 'Doucette', 'Japan', '201619852722143', '65918.01', 'VP Sales');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (9, 'Esmeralda', 'Colliford', 'China', '3586152904459331', '16503.93', 'Pharmacist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (10, 'Stern', 'Kerbler', 'China', '5602240198379243', '113796.95', 'Pharmacist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (11, 'Davon', 'Cullingford', 'Iceland', '30051188414574', '17554.50', 'Financial Advisor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (12, 'Drew', 'Whitehorn', 'Bangladesh', '3574114705661915', '41511.15', 'Accountant III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (13, 'Carrissa', 'De Hailes', 'Brazil', '677142669931004226', '76735.49', 'Executive Secretary');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (14, 'Barbara-anne', 'Gounet', 'Russia', '3538555323031912', '26072.62', 'Teacher');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (15, 'Ranna', 'Edelmann', 'Iran', '5602253469076398', '95814.09', 'Assistant Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (16, 'May', 'Knowlman', 'Portugal', '63044178164838542', '161945.06', 'Web Developer I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (17, 'Martin', 'Manger', 'Russia', '560222619848417566', '20028.94', 'Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (18, 'Charil', 'Larenson', 'China', '374622506827624', '131985.61', 'VP Sales');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (19, 'Vite', 'Wipfler', 'Guatemala', '5517066205647890', '91523.31', 'Account Executive');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (20, 'Giuseppe', 'Shenfisch', 'China', '201918797648433', '70579.06', 'Recruiter');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (21, 'Camilla', 'Ambrogini', 'Sri Lanka', '3575542125208348', '112271.88', 'Tax Accountant');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (22, 'Reece', 'Petrie', 'China', '201645113569502', '176760.08', 'Speech Pathologist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (23, 'Georgeanna', 'Lorkins', 'Vietnam', '3570974727098436', '43094.15', 'Chemical Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (24, 'Olive', 'Rain', 'Belarus', '5893385998496352058', '1861.54', 'Quality Control Specialist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (25, 'Celinda', 'Llewhellin', 'China', '5493988560013897', '5996.96', 'Web Designer I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (26, 'Susy', 'Swanborrow', 'Czech Republic', '4905717140298805031', '43658.89', 'Structural Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (27, 'Omar', 'Phillippo', 'China', '3589936548120573', '44841.81', 'Software Test Engineer I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (28, 'Koressa', 'Caskey', 'Japan', '676708085900223002', '154123.27', 'Assistant Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (29, 'Hildegaard', 'Jenne', 'China', '3578516978610427', '155131.66', 'Account Coordinator');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (30, 'Rowan', 'Deek', 'Chile', '3583263090766851', '129605.99', 'Marketing Assistant');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (31, 'Andree', 'Konig', 'China', '6395648599724347', '32348.66', 'Statistician III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (32, 'Lilyan', 'Milsted', 'China', '3553926527561600', '465.67', 'Compensation Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (33, 'Aurthur', 'Waind', 'Portugal', '3558643490195085', '175151.49', 'Accountant II');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (34, 'Catlin', 'Blowne', 'Pakistan', '3532668429587293', '72934.66', 'Analog Circuit Design manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (35, 'Calvin', 'Garlicke', 'France', '4041372421784', '177741.53', 'Research Nurse');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (36, 'Willi', 'Maxfield', 'Indonesia', '6380157859359932', '177789.59', 'Project Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (37, 'Sorcha', 'Van den Velde', 'Russia', '5007666941920050', '166831.86', 'Food Chemist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (38, 'Wilmette', 'Etheridge', 'China', '3530526576282567', '178559.71', 'Compensation Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (39, 'Emmery', 'Klauer', 'China', '5010129677163382', '120585.49', 'VP Quality Control');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (40, 'Quinn', 'O''Hearn', 'China', '4017952703483078', '177658.27', 'VP Product Management');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (41, 'Orly', 'Warbys', 'China', '5602240921688373', '169326.37', 'Structural Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (42, 'Wyndham', 'Zorzini', 'China', '5602215107557980', '179877.26', 'Accountant I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (43, 'Haley', 'Conti', 'Philippines', '56022225283247079', '13390.92', 'Assistant Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (44, 'Hyacinthe', 'Owenson', 'Yemen', '5002354790569782', '72565.69', 'Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (45, 'Jeanine', 'Gatch', 'Democratic Republic of the Congo', '3582438861468868', '30126.42', 'Programmer II');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (46, 'Clarissa', 'Sinnett', 'Poland', '3561657594173769', '76590.72', 'Administrative Assistant IV');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (47, 'Marylin', 'Hakeworth', 'Japan', '374366058973820', '98974.81', 'Senior Financial Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (48, 'Robbi', 'Garvie', 'France', '630414763509336829', '160566.64', 'Civil Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (49, 'Arnuad', 'Keasley', 'China', '30314030782014', '106412.34', 'Structural Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (50, 'Sydney', 'Aldred', 'Indonesia', '3532443581753640', '67363.16', 'Social Worker');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (51, 'Herta', 'Ravenhill', 'China', '6371294327641426', '72474.89', 'Marketing Assistant');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (52, 'Juan', 'Hadrill', 'Kazakhstan', '3550079628345169', '85650.08', 'Associate Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (53, 'Paolina', 'Christie', 'Cyprus', '6333764915506529258', '158329.30', 'Engineer I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (54, 'Gary', 'Landreth', 'Indonesia', '3570777194523764', '54942.75', 'Recruiter');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (55, 'Vi', 'Beville', 'Palestinian Territory', '3528512845673921', '160708.05', 'Professor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (56, 'Kati', 'Clitheroe', 'Indonesia', '3560484689271643', '127374.43', 'Project Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (57, 'Del', 'Paine', 'China', '67063625151964274', '63785.01', 'Business Systems Development Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (58, 'Caralie', 'Ead', 'Albania', '3529023064302175', '55832.97', 'VP Marketing');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (59, 'Iain', 'Rimbault', 'Peru', '30580990240710', '95844.19', 'Computer Systems Analyst I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (60, 'Elianora', 'Matous', 'Indonesia', '3574858001606723', '77990.87', 'Account Executive');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (61, 'Addy', 'Phillot', 'Czech Republic', '5602220295127826939', '131680.87', 'Pharmacist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (62, 'Meg', 'Woodroofe', 'Indonesia', '63042609164300101', '177131.64', 'Data Coordiator');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (63, 'Harley', 'Dane', 'Thailand', '3541997445347286', '141744.46', 'Accounting Assistant III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (64, 'Hyacinth', 'Apted', 'Portugal', '67090440880971153', '2111.24', 'Administrative Officer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (65, 'Gonzalo', 'Sturror', 'China', '3554687471399111', '32162.71', 'Staff Scientist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (66, 'Basil', 'Healks', 'Indonesia', '3542992847433965', '102394.02', 'Senior Developer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (67, 'Lavinia', 'Aizikovich', 'Albania', '6771353748784532', '62372.30', 'Environmental Specialist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (68, 'Daron', 'Vidyapin', 'China', '5108751363867464', '86359.25', 'Assistant Media Planner');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (69, 'Jard', 'Hodgin', 'Philippines', '4917111573384673', '91089.22', 'Food Chemist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (70, 'Kermie', 'Strother', 'Yemen', '3562974373551340', '86456.24', 'Environmental Specialist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (71, 'Kaile', 'Korpal', 'Poland', '4041596493299887', '28364.08', 'Marketing Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (72, 'Matty', 'Ensley', 'Argentina', '67595723858192104', '146837.94', 'Analyst Programmer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (73, 'Cathlene', 'Goodhand', 'China', '5602259553477863', '142014.42', 'Tax Accountant');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (74, 'Chico', 'Wragge', 'Indonesia', '564182528294190785', '86203.36', 'Librarian');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (75, 'Woodie', 'Hryniewicz', 'France', '3588366689254737', '37739.53', 'Pharmacist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (76, 'Phylis', 'Thirlwell', 'Indonesia', '3539321138675792', '156385.91', 'Compensation Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (77, 'Norman', 'Lofting', 'Philippines', '3575004634136320', '161946.38', 'VP Product Management');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (78, 'Michele', 'Sconce', 'Portugal', '30296671887071', '116003.55', 'Internal Auditor');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (79, 'Pamelina', 'Chippendale', 'Albania', '3572347991213809', '175108.84', 'Mechanical Systems Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (80, 'Karry', 'Yelden', 'Estonia', '3549740257183825', '38797.26', 'Recruiter');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (81, 'Georgeanne', 'Freddi', 'China', '5108752629579927', '164584.83', 'Geological Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (82, 'Tess', 'Cheetam', 'China', '6333979754875547398', '37184.46', 'Mechanical Systems Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (83, 'Ray', 'Clements', 'Indonesia', '3555394619584576', '79507.90', 'VP Product Management');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (84, 'Bev', 'Throughton', 'Brazil', '348557885319020', '64972.37', 'Analog Circuit Design manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (85, 'Archer', 'Lawlings', 'China', '201763002522142', '155826.74', 'Administrative Assistant III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (86, 'Babette', 'St Quenin', 'Indonesia', '633320242072364424', '67091.82', 'Design Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (87, 'Jareb', 'Waterfield', 'Tanzania', '5610184737701022', '176412.01', 'Office Assistant IV');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (88, 'Yvor', 'Teodoro', 'Russia', '3544179651556432', '145688.09', 'Business Systems Development Analyst');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (89, 'Alex', 'Lejeune', 'China', '5610831243400446', '132029.01', 'Dental Hygienist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (90, 'Rose', 'Solway', 'Brazil', '3569539653033872', '166471.26', 'Systems Administrator III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (91, 'Duky', 'De Pero', 'Russia', '3534279555801785', '24105.40', 'Chemical Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (92, 'Aleece', 'Halladey', 'China', '5010124024713195', '126432.09', 'Account Coordinator');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (93, 'Roxy', 'Atheis', 'Ukraine', '374622732221154', '72965.96', 'Project Manager');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (94, 'Mary', 'Caville', 'Myanmar', '5602210464480199', '8294.84', 'Engineer III');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (95, 'Krishnah', 'Cato', 'Jordan', '3574254615207373', '107462.14', 'Chief Design Engineer');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (96, 'Dennis', 'Barendtsen', 'Croatia', '3580866902910070', '79974.07', 'GIS Technical Architect');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (97, 'Adi', 'Craigie', 'China', '3561662272998057', '45278.32', 'Occupational Therapist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (98, 'Lyn', 'Dexter', 'Sweden', '676779787843985647', '96929.84', 'Web Developer I');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (99, 'Eustacia', 'Battisson', 'Russia', '3558285351659187', '140273.06', 'Dental Hygienist');
+insert into customers (id, first_name, last_name, country, card_number, salary_per_year, job_title)
+values (100, 'Chrysa', 'Swede', 'Czech Republic', '4913139532408949', '48072.43', 'Assistant Media Planner');
+
+CREATE TABLE date_exercises
+(
+    id         SERIAL,
+    event_name VARCHAR(120),
+    start_date DATE,
+    end_date   DATE
+);
+
+DROP TABLE date_exercises;
+
+INSERT INTO date_exercises(event_name, start_date, end_date)
+VALUES ('Action 1', '2010-01-01', '2015-01-25'),
+       ('Action 2', '2014-02-18', '2018-03-13'),
+       ('Action 3', '2011-06-18', '2019-03-15'),
+       ('Action 4', '2009-11-20', '2013-06-30'),
+       ('Action 5', '2000-09-16', '2018-03-12'),
+       ('Action 6', '2015-08-18', '2014-05-18');
