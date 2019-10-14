@@ -1,0 +1,39 @@
+SELECT *
+FROM students;
+
+SELECT *
+FROM courses;
+
+SELECT *
+FROM students_courses
+ORDER BY student_id;
+
+SELECT c.course_name, first_name, second_name
+FROM students s
+         INNER JOIN students_courses sc ON s.id = sc.student_id
+         INNER JOIN courses c ON sc.courses_id = c.id
+GROUP BY c.course_name, first_name, second_name
+ORDER BY course_name;
+
+SELECT course_name,
+       (SELECT COUNT(*)
+        FROM students s
+                 INNER JOIN students_courses sc on s.id = sc.student_id
+        WHERE courses.id = sc.courses_id) AS student_counter
+FROM courses;
+
+SELECT first_name,
+       second_name,
+       (SELECT COUNT(*)
+        FROM courses
+                 INNER JOIN students_courses sc on courses.id = sc.courses_id
+        WHERE students.id = sc.student_id) AS course_counter
+FROM students;
+
+SELECT DISTINCT students.id, first_name, course_name
+FROM students
+         RIGHT OUTER JOIN students_courses sc ON students.id = sc.student_id
+         RIGHT OUTER JOIN courses c on sc.courses_id = c.id
+ORDER BY first_name, course_name;
+
+
