@@ -19,8 +19,12 @@ DROP TABLE courses CASCADE;
 
 CREATE TABLE students_courses
 (
-    student_id INTEGER REFERENCES students (id) ON UPDATE CASCADE ON DELETE CASCADE,
-    courses_id INTEGER REFERENCES courses (id) ON UPDATE CASCADE ON DELETE CASCADE
+    student_id INTEGER,
+    courses_id INTEGER
 );
+
+ALTER TABLE students_courses
+    ADD FOREIGN KEY (student_id) REFERENCES students (id) ON UPDATE CASCADE ON DELETE CASCADE,
+    ADD FOREIGN KEY (courses_id) REFERENCES courses (id) ON UPDATE CASCADE ON DELETE CASCADE;
 
 DROP TABLE students_courses;
