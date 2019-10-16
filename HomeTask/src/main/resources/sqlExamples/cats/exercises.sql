@@ -49,6 +49,16 @@ from (select name                                                             as
       group by name) as c
 where kittens_number = min_number_of_kittens;
 
+select cat_name, kittens_number, min_number_of_kittens
+from (select name                                                             as cat_name,
+             (select count(*) from kittens where cats.name = kittens.catname) as kittens_number,
+             (select max(counter) as min_kittens_number
+              from (select count(*) counter from kittens group by catname) c) as min_number_of_kittens
+      from cats
+               right outer join kittens k on cats.name = k.catname
+      group by name) as c
+where kittens_number = min_number_of_kittens;
+
 
 select min(counter) as min_value
 from (select count(*) counter from kittens group by catname) result;

@@ -36,4 +36,20 @@ FROM students
          RIGHT OUTER JOIN courses c on sc.courses_id = c.id
 ORDER BY first_name, course_name;
 
+SELECT course_name AS course, courses_id, students
+FROM courses
+         RIGHT JOIN (SELECT courses_id, count(*) students FROM students_courses GROUP BY courses_id) AS students
+                    on courses.id = students.courses_id
+         RIGHT JOIN (select min(counter) minsty
+                     FROM (SELECT count(*) counter FROM students_courses GROUP BY courses_id) AS c) AS min_students_counter
+                    ON courses.id = students.courses_id
+WHERE students.students = min_students_counter.minsty;
 
+SELECT course_name AS course, courses_id, students
+FROM courses
+         RIGHT JOIN (SELECT courses_id, count(*) students FROM students_courses GROUP BY courses_id) AS students
+                    on courses.id = students.courses_id
+         RIGHT JOIN (select max(counter) minsty
+                     FROM (SELECT count(*) counter FROM students_courses GROUP BY courses_id) AS c) AS min_students_counter
+                    ON courses.id = students.courses_id
+WHERE students.students = min_students_counter.minsty;
