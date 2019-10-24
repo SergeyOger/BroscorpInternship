@@ -40,3 +40,14 @@ ORDER BY start_date;
 
 SELECT event_name, (age(end_date, start_date))
 FROM date_exercises;
+
+select *
+from date_exercises;
+
+select start_date, start_date + interval '1 year'
+from date_exercises;
+
+select extract(year from start_date)
+from date_exercises
+order by start_date;
+select localtimestamp;
